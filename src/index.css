@@ -3,6 +3,11 @@
     src: url(../src/assets/fonts/Doto-Regular.ttf);
 }
 
+@font-face {
+    font-family: Playfair;
+    src: url(../src/assets/fonts/PlayfairDisplay-Regular.ttf);
+}
+
 @import "tailwindcss";
 
 @theme{
@@ -10,7 +15,11 @@
 }
 
 @theme{
-    --animate-appear: appearing 0.25s ease-out;
+    --font-playfair: Playfair, "sans-serif";
+}
+
+@theme{
+    --animate-appear: appearing 0.30s ease-out;
     @keyframes appearing {
         0%{
             opacity: 0;

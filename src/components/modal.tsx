@@ -1,7 +1,5 @@
 import {items} from "../assets/yoko-data"
 
-import { useState } from "react"
-
 export const Modal = ({open, identifier, toClose}:{open:boolean, identifier: number, toClose : any}) => {
     if (!open) return null
 
@@ -10,18 +8,17 @@ export const Modal = ({open, identifier, toClose}:{open:boolean, identifier: num
         {/* ID EXTERIOR (tengo q ajustar el scroll, ya luego) */}
         <div className="fixed top-0 left-0 bottom-0 right-0 bg-[rgba(0,0,0,.7)] h-full overflow-hidden" />
         {/* ID INTERIOR (ajustando esa madre de flex)*/}
-        <div className="bg-gray-600 fixed top-1/2 left-1/2 -translate-1/2 z-50
+        <div className="bg-gray-700 fixed top-1/2 left-1/2 -translate-1/2 z-50
         animate-appear rounded-4xl p-10 h-280 w-400">
-            <div className="flex flex-row-reverse items-stretch bg-amber-100">
-                <div>
-                    <h1 className="bg-cyan-400 scale-100 text-8xl font-doto text-black p-10
+            <div className="flex flex-row-reverse items-stretch">
+                <div id="TEXTO">
+                    <h1 className="scale-100 text-8xl font-playfair p-10
                     rounded-4xl">{items.at(identifier)?.title}</h1>
-                    <p className="bg-blue-50 w-190 text-2xl font-light p-0.5">{items.at(identifier)?.description}</p>
+                    <p className="w-190 h-140 text-2xl font-playfair p-4">{items.at(identifier)?.description}</p>
                 </div>
-                <div className="bg-amber-800 flex justify-center items-center">
+                <div id="imagen" className="flex justify-center items-center content-center">
                     <img src={items.at(identifier)?.gallery} alt="imagen"
-                    className="rounded-[10%]
-                    w-300 h-200 "/>
+                    className="w-300 h-200 border-4 rounded-[10%] border-gray-500"/>
                 </div>
             </div>
             <div className=" h-50 flex items-end justify-end p-7">
