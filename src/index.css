@@ -9,4 +9,50 @@
     --font-doto: Doto, "sans-serif";
 }
 
+@theme{
+    --animate-appear: appearing 0.25s ease-out;
+    @keyframes appearing {
+        0%{
+            opacity: 0;
+            transform: scale(0.25%);
+        }
+        100%{
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+}
+
+@theme{
+    --animate-disappear: disappearing 0.25s ease-out;
+    @keyframes disappearing {
+        0%{
+            opacity: 1;
+            transform: scale(1);
+        }
+        100%{
+            opacity: 0;
+            transform: scale(0.25%);
+        }
+    }
+}
+
+@theme{
+    --animate-pic: trans 0.3s ease-out;
+    @keyframes trans {
+        0%{
+            opacity: 100%;
+        }
+        33%{
+            opacity: 66%; 
+        }
+        66%{
+            opacity: 33%;
+        }
+        100%{
+            opacity: 0%;
+        }
+        
+    }
+}
 

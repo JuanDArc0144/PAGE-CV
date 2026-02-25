@@ -1,5 +1,5 @@
-import profile_pic from "../images/prof-pic.jpeg"
-import profile_pic_anime from "../images/himeno.jpg"
+import profile_pic from "../images/App_Images/prof-pic.jpeg"
+import profile_pic_anime from "../images/App_Images/himeno.jpg"
 import { useState } from "react"
 
 export const Profile = () => {

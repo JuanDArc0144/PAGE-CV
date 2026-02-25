@@ -1,19 +1,17 @@
 import './App.css'
 import { Header } from './components/header'
 import { Profile } from './components/profile'
-import { Enjoy } from './components/enjoy'
-import videogames from "./images/nier.gif"
-import anime from "./images/chainsaw.gif"
-import coding from "./images/coding.gif"
-import { Proyecto } from './components/proyecto'
-import uniroom from './images/uniroom.gif'
-import emergencity from './images/emergencity.gif'
-import sweepinbox from './images/sweepinbox.gif'
-
+import { Icon } from './components/icon'
+import videogames from "./images/App_Images/nier.gif"
+import anime from "./images/App_Images/chainsaw.gif"
+import coding from "./images/App_Images/coding.gif"
+import uniroom from './images/App_Images/uniroom.gif'
+import emergencity from './images/App_Images/emergencity.gif'
+import sweepinbox from './images/App_Images/sweepinbox.gif'
 function App() {
 
   return (
-    <body className='bg-[url(./images/bg.gif)] text-green-400'>
+    <body className='bg-[url(./images/App_Images/bg.gif)] text-green-400'>
       {/* headercito */}
       <Header></Header>
 
@@ -28,9 +26,9 @@ function App() {
         COSAS QUE ME GUSTAN
       </h1>
         <div className="flex justify-center">
-            <Enjoy item="VIDEOJUEGOS" fotito={videogames}></Enjoy>
-            <Enjoy item="ANIME" fotito={anime}></Enjoy>
-            <Enjoy item="PROGRAMAR" fotito={coding}></Enjoy>
+            <Icon item="VIDEOGAMES" fotito={videogames} id={0}></Icon>
+            <Icon item="ANIME" fotito={anime} id={1}></Icon>
+            <Icon item="PROGRAMAR" fotito={coding} id={2}></Icon>
         </div>
      </div>
       <div className='w-36 h-36'></div>
@@ -40,9 +38,9 @@ function App() {
           PROYECTOS
         </h1>
         <div className='flex justify-center'>
-        <Proyecto name='EMERGENCITY' image={emergencity}></Proyecto>
-        <Proyecto name='UNIROOM' image={uniroom}></Proyecto>
-        <Proyecto name='SWEEPINBOX' image={sweepinbox}></Proyecto>
+        <Icon item='EMERGENCITY' fotito={emergencity} id={3}></Icon>
+        <Icon item='UNIROOM' fotito={uniroom} id={4}></Icon>
+        <Icon item='SWEEPINBOX' fotito={sweepinbox} id={5}></Icon>
       </div>
       </div>
     </body>
