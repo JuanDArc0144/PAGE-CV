@@ -20,7 +20,7 @@ export const items = [{
         },{
             "id" : "PROGRAMAR",
             "title" : "Logica, algoritmos...",
-            "description" : "un juego excelente, maravilloso",
+            "description" : "Soy alguien que le gustan mucho la lógica y las matemáticas, especialmente las ciencias básicas pero tambien las computacionales. Una de las cosas pendientes que tengo por hacer es estudiar un poco más de Electrónica para desarrollar algunas habilidades en el campo de la robótica aunque para ello necesite el diseño 3d ",
             "gallery": code
         },{
             "id" : "EMERGENCITY",

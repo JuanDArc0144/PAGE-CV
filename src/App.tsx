@@ -11,7 +11,7 @@ import sweepinbox from './images/App_Images/sweepinbox.gif'
 function App() {
 
   return (
-    <body className='bg-[url(./images/App_Images/bg.gif)] text-green-400'>
+    <body className='bg-[url(./images/App_Images/bg.gif)] text-green-400 scale-75'>
       {/* headercito */}
       <Header></Header>
 
